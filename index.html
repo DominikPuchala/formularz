@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Formularz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+        <link href="assets/css/style.css" rel="Stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="site-nav">
+                <div class="site-nav--container">
+                    <img src="assets/img/page-logo.png" alt="page-logo">
+                    <div class="button--hamburger" role="button">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </div>
+                    <ul class="site-nav-list">
+                        <li class="list-item">JAK TO DZIAŁA</li>
+                        <li class="list-item">REGIONALIA</li>
+                        <li class="list-item">PARTNERZY</li>
+                        <li class="list-item">AUSTERIA</li>
+                        <li class="list-item">GOTOWE I ZDROWE</li>
+                        <li class="list-item">APTEKA Z NATURY</li>
+                        <li class="list-item">WIEDZA</li>
+                        <li>
+                            <div class="list-item patron" role="img" aria-label="Page patron" aria-labelledby="image-description"> 
+                                <p id="image-description" class="image-description" >PATRON SERWISU</p>
+                                <a href="https://pyszne.pl" target="_blank"><img src="assets/img/patron.png" alt="Pyszne.pl"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <nav>
+                <div class="container--aside">
+                    <div class="aside-toggle-button" role="button">
+                    </div>
+                    <ul class="list-aside-fixed">
+                        <li>Twoje konto</li>
+                        <li>Panel użytkownika</li>
+                        <li>Lista zakupowa</li>
+                        <li>Przepisy na co dzień</li>
+                        <li>Przepisy okazjonalne</li>
+                        <li>Spiżarnia</li>
+                        <li>Kalendarz / Notatki</li>
+                        <li>Porady kulinarne</li>
+                    </ul>
+                </div>    
+            </nav>
+        </aside>
+        <main>
+            <section class="section section--menu">
+                <div class="container--header">
+                    <h1 class="page-title--large center" aria-level="1">Twoje konto</h1>
+                    <div class="user-menu">
+                        <p>witaj, JANUSZ</p>
+                        <div class="user-menu--buttons">
+                            <button class="menu-button-padding-right">TWOJE KONTO</button>
+                            <button class="menu-button-padding-left">WYLOGUJ SIĘ</button>
+                        </div>
+                    </div>
+                    <div class="page-menu">
+                        <button class="button--menu active">Ustawienia</button>
+                        <button class="button--menu">Podsumowanie</button>
+                        <button class="button--menu">Twoja dieta</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Dane do logowania</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <form class="content">
+                        <label class="label">Imię / nick</label>
+                        <input class="input" type="text" placeholder="Janek" name="name">
+
+                        <label class="label">Adres e-mail</label> 
+                        <input class="input" type="email" placeholder="twojadres@ideo.pl" name="email">
+                        <label class="label--small" >Adres e-mail będzie służył do logowania się w serwisie</label>
+
+                        <label class="label" >Nowe hasło</label>
+                        <input class="input" type="password" name="password">
+                        <label class="label--small" >Hasło powinno zawierać co najmniej 8 znaków</label>
+
+                        <label class="label" >Powtórz nowe hasło</label>
+                        <input class="input" type="password" name="password-repeat">
+
+                        <label class="label">Kraj</label>
+                        <select class="input">
+                            <option>Polska</option>
+                            <option>Anglia</option>
+                            <option>Niemcy</option>
+                            <option>Hiszpania</option>
+                            <option>Inne</option>
+                        </select>
+
+                        <label class="label">Kod pocztowy</label>
+                        <input class="input" type="number" placeholder="35-234">
+
+                        <button class="button--small" type="submit">ZAPISZ</button>
+                    </form>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Ankieta</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <form class="content">
+                        <div class="sex-container">
+                            <h4 class="label--small__header" aria-level="3">Płeć</h4>
+                            <div class="checkboxes-container">
+                                <div class="button--radio" role="radio" aria-checked="false">
+                                    <label>Kobieta
+                                        <input type="radio" name="sex">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="button--radio" role="radio" aria-checked="false">
+                                    <label>Mężczyzna
+                                        <input type="radio" name="sex">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="data-required-container col-xl-6 col-12">
+                                <h3 class="page-title--small" aria-level="2">Dane obowiązkowe</h3>
+
+                                <label class="label">Wzrost(cm)</label>
+                                <input class="input" type="number" placeholder="182" name="height">
+
+                                <label class="label">Waga(kg)</label>
+                                <input class="input" type="number" placeholder="100" name="weight">
+
+                                <label class="label">Wiek</label>
+                                <input class="input" type="number" placeholder="40" name="name">
+
+                                <label class="label">Czy jesteś w ciąży lub karmisz piersią?</label>
+                                <div class="flex-container">
+                                    <div class="button--radio" role="radio" aria-checked="false">
+                                        <label>Nie
+                                            <input type="radio" name="pregnancy">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="button--radio" role="radio" aria-checked="false">
+                                        <label>Jestem w ciąży
+                                                <input type="radio" name="pregnancy">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="button--radio" role="radio" aria-checked="false">
+                                    <label>Karmię piersią
+                                        <input class="button--radio" type="checkbox" name="suckle">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <label class="label">Tydzień ciąży</label>
+                                <input class="input" type="number" placeholder="182" name="pregnancy-week">
+
+                                <label class="label">Waga sprzed ciąży(kg)</label>
+                                <input class="input" type="number" placeholder="100" name="weight-before-pregnancy">
+
+                                <label class="label">Data porodu</label>
+                                <input class="input" type="date" name="birth-date">
+                            </div>
+
+                            <div class="data-optional-container col-xl-6 col-12">
+                                <h3 class="page-title--small" aria-level="2">Dane opcjonalne</h3>
+
+                                <label class="label">Obwód pasa(cm)</label>
+                                <input class="input" type="number" name="waist-size">
+
+                                <label class="label">Obwód talii(cm)</label>
+                                <input class="input" type="number" name="midriff-size">
+
+                                <label class="label">Obwód bioder(cm)</label>
+                                <input class="input" type="number" name="hips-size">
+
+                                <label class="label">Obwód łydki(cm)</label>
+                                <input class="input" type="number" name="calf-size">
+
+                                <label class="label">Obwód uda(cm)</label>
+                                <input class="input" type="number" name="thigh-size">
+
+                                <label class="label">Obwód piersi(cm)</label>
+                                <input class="input" type="number" name="breast-size">
+
+                                <label class="label">Obwód nadgarstka(cm)</label>
+                                <input class="input" type="number" name="wrist-size">
+
+                                <label class="label">Obwód bicepsa(cm)</label>
+                                <input class="input" type="number" name="biceps-size">
+
+                                <label class="label">Obwód szyi(cm)</label>
+                                <input class="input" type="number" name="neck-size">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Rodzina</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>    
+                    <div class="content min-height">
+                        <table class="table">
+                            <tr>
+                                <th>Imie / nick</th>
+                                <th>Adres e-mail</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>maria.kowalska@poczta.pl</td>
+                                <td>Aktywny</td>
+                                <td>
+                                    <img class="button--remove" src="assets/img/delete-button.png" alt="delete button">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Paweł</td>
+                                <td>pawel.kowalski@gmail.com</td>
+                                <td>Aktywny</td>
+                                <td>
+                                    <img class="button--remove" src="assets/img/delete-button.png" alt="delete button">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kasia</td>
+                                <td>kasia123@poczta.pl</td>
+                                <td>Nieaktywny</td>
+                                <td>
+                                    <img class="button--remove" src="assets/img/delete-button.png" alt="delete button">
+                                    <img class="button--message" src="assets/img/message-button.png" alt="message button">
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="button--large right">ZAPROŚ KOLEJNĄ OSOBĘ</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Alergeny i nietolerancje pokarmowe</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <ul class="list-main content">
+                        <li>
+                            <div class="flex-container">
+                                <p>MLEKO</p>
+                                <img class="button-allergen" src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-second-level">
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Mleko krowie</p>
+                                                <img class="button-allergen" src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Wszystkie rodzaje</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Surowe</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Gotowane</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Mleko kozie</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Wszystkie rodzaje</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Surowe</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Gotowane</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Mleko owcze</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        
+                                            <ul class="list-third-level">
+                                            <li>
+                                                <p>Wszystkie rodzaje</p>
+                                                <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                            </li>
+                                            <li>
+                                                <p>Surowe</p>
+                                                <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                            </li>
+                                            <li>
+                                                <p>Gotowane</p>
+                                                <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                        </li>
+
+                        <li>
+                            <div class="flex-container">
+                                    <p>ORZECHY</p>
+                                    <img class="button-allergen" src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-third-level">
+                                    <li>
+                                        <p>Orzechy włoskie</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Orzechy laskowe</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Orzechy ziemne</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Nerkowce</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Migdały</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Makadamia</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Pistacja</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                </ul>
+                        </li>
+                            
+                        <li>
+                            <div class="flex-container">
+                                    <p>OWOCE</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-second-level">
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Owoce zielone</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Awokado</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Oliwki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Kiwi</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Agrest</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+                                        
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Owoce czerwone</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Żurawina</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Wiśnie</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Maliny</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Poziomki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Arbuz</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Owoce żółto-pomarańczowe</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Ananas</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Kaki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Mandarynki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Cytryna</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Grejfrut</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Papaja</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Melon</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Pigwa</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Pomelo</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Owoce czarne i fioletowe</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Borówka amerykańska</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Jagody</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Aronia</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Czarne porzeczki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Owoce białe</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Jabłko</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Banan</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Winogrona</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                </ul>
+                            
+                        </li>
+
+                        <li>
+                            
+                            <div class="flex-container">
+                                    <p>DWUTLENEK SIARKI</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            
+                            <ul class="list-third-level">
+                                    <li>
+                                        <p>Dwutlenek siarki</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <div class="flex-container">
+                                    <p>ROŚLINY STRĄCZKOWE</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-second-level">
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Strączkowe rośliny jadalne uprawiane w klimacie umiarkowanym</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                        <p>Bób</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Ciecierzyca pospolita</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Fasola zwykła</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Fasola wielokwiatowa</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Fasolnik</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Groch zwyczajny</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Soczewica jadalna</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                        <p>Soja warzywna</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+    
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Strączkowe rośliny jadalne uprawiane w tropikach</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Fasola azuki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Fasola mungo</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Fasola ostrolistna</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Fasola półksiężycowata</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Łust głąbigroszek</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Nikla indyjska</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Przewłoda mieczolistna</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Przewłoda szablasta</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Sorzycha ziemna</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Wspięga pospolita</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+    
+                                </ul>
+                        </li>
+
+                        <li>
+                            <div class="flex-container">
+                                    <p>RYBY I OWOCE MORZA</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-second-level">
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Ryby</p>
+                                                <img class="button-allergen" src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Karp</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Szczupak</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Sum</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Dorada</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Pstrąg</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Łosoś</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Makrela</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <div class="container-other"> 
+                                                        <p>Inne</p> 
+                                                        <input type="text" placeholder="Jaki ?">
+                                                    </div>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+    
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Skorupiaki</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Homary</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Langusty</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Homarce</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Kraby</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Krewetki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                        </li>
+    
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Małże</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Ostrygi</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Omułki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Przegrzebki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Sercówki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+    
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Ślimaki</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Uchowiec</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Trąbiki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Pobrzeżki</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+    
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Głowonogi</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Mątwy</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Kałamarnice</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Ośmiornice</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <div class="flex-container">
+                                    <p>GORCZYCA</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-third-level">
+                                    <li>
+                                        <p>Biała</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Czarna</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Sarepska</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <div class="flex-container">
+                                    <p>SEZAM</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-third-level">
+                                    <li>
+                                        <p>Biały</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Czarny</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <div class="flex-container">
+                                    <p>SELER</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-second-level">
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Korzeniowy</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Praga gigant</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Diamant</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Kaskada</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Apple</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Root mushroom</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Albin</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Mocny</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Anita</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Stalked seler</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Złoty</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Malachit</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Tango</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Atlant</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Mężczyzna sprawność</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Pascal</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex-container">
+                                                <p>Liściowy</p>
+                                                <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                                        </div>
+                                        <ul class="list-third-level">
+                                                <li>
+                                                    <p>Wesołość</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Zahar</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Sail</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                                <li>
+                                                    <p>Samuraj</p>
+                                                    <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                                    <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                </ul>
+                        </li>
+
+                        <li>
+                            <div class="flex-container">
+                                    <p>ZBOŻA</p>
+                                    <img class="button-allergen"  src="assets/img/arrow.png" alt="arrow" role="button">
+                            </div>
+                            <ul class="list-third-level">
+                                    <li>
+                                        <p>Kasza jaglana (proso)</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Kukurydza</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Ryż pełnoziarnisty</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Przenica lub orkisz</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Owies</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Kasza gryczana</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Amarantus (szarłat)</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                    <li>
+                                        <p>Quinoa (komosa ryżowa)</p>
+                                        <img class="button-checkbox" src="assets/img/list-negative.png" alt="unchecked" role="button">
+                                        <img  src="assets/img/list-positive.png" alt="checked" role="button">
+                                    </li>
+                                </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Aktywność fizyczna</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <form class="content physical-activity-container">
+                        <div class="button--radio" role="radio" aria-checked="false">
+                            <label><span class="bold">Tryb siedzący</span> (mało ruchu, zajęcia codzienne nie wymagające wysiłku fizycznego, jazda samochodem)
+                                <input type="radio" name="activity">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="button--radio" role="radio" aria-checked="false">
+                            <label><span class="bold">Niska aktywność</span> (praca biurowa, krótkie spacery, lekkie prace w ogrodzie)
+                                <input type="radio" name="activity">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="button--radio" role="radio" aria-checked="false">
+                            <label><span class="bold">Lekka aktywność</span> (cięższe prace w ogrodzie, ćwiczenia fizyczne 30-60min 2-3 razy w tygodniu)
+                                <input type="radio" name="activity">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="button--radio" role="radio" aria-checked="false">
+                            <label><span class="bold">Średnia aktywność</span> (ćwiczenia fizyczne powyżej 60 min 2-3 razy w tygodniu, lekkie prace budowlane)
+                                <input type="radio" name="activity">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="button--radio" role="radio" aria-checked="false">
+                            <label><span class="bold">Wysoka aktywność</span> (ćwiczenia fizyczne powyżej 60 min 4-5 razy w tygodniu, prace budowlane prowadzone narzędziami ręcznymi)
+                                <input type="radio" name="activity">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="button--radio" role="radio" aria-checked="false">
+                            <label><span class="bold">Bardzo wysoka aktywność</span> (ćwiczenia fizyczne powyżej 120 min 4-7 razy w tygodniu, ciężkie prace budowlane)
+                                <input type="radio" name="activity">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Subskrypcja</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <div class="content container--subscribe">
+                        <div class="subscribe-expiry-container">
+                            <p>Ważność Twojej subskrypcji</p>
+                            <p>01.09.2018</p>
+                        </div>
+                        <p class="subscribe-expiry-text">Twoja subskrypcja jest ważna jeszcze <span class="bold">przez 30 dni</span></p>
+                        <button class="button--large button-middle-right button-margin-top">PRZEDŁUŻ SUBSKRYPCJĘ</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="page-title" aria-level="1">Ustawienia serwisu</h2>
+                        <div class="toggle-content-button" role="button">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <form class="content settings-container">
+                        <div class="button--radio__checkbox" role="checkbox" aria-checked="false">
+                            <label>Wyłącz reklamy w serwisie
+                                <input id="ads-checkbox" type="checkbox" name="ads">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label--small" for="ads-checkbox">
+                                Tu można zamieścić rozszerzoną informację o tej opcji. Lorem ipsum dolor sit amet, consectetur adispiscing elit.
+                                Aenean bibendum laereet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            </label>
+                        </div>
+                        <div class="button--radio__checkbox" role="checkbox" aria-checked="false">
+                            <label>Wyłącz powiadomienia mailowe wysyłane z serwisu
+                                <input id="notification-checkbox" type="checkbox" name="notification">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="label--small" for="notification-checkbox">
+                                Tu można zamieścić rozszerzoną informację o tej opcji. Lorem ipsum dolor sit amet, consectetur adispiscing elit.
+                                Aenean bibendum laereet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section" id="color-templates">
+                <div class="container container-margin-top">
+                    <h2 class="page-title--small" aria-level="1">Szablon kolorystyczny</h2>
+                    <div class="row theme-container">
+                        <div class="theme col-6 col-xl-3">
+                            <label for="default-theme"><img src="assets/img/default-theme.png" alt="default theme"></label>
+                            <div class="button--radio" role="radio" aria-checked="false">
+                                <label> Domyślny szablon
+                                    <input id="default-theme" type="radio" name="theme" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="theme col-6 col-xl-3">
+                            <label for="red-theme"><img src="assets/img/red-theme.png" alt="red theme"></label>
+                            <div class="button--radio" role="radio" aria-checked="false">
+                                <label> Szablon A
+                                    <input id="red-theme" type="radio" name="theme">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="theme col-6 col-xl-3">
+                            <label for="pink-theme"><img src="assets/img/pink-theme.png" alt="pink theme"></label>
+                            <div class="button--radio" role="radio" aria-checked="false">
+                                <label> Szablon B
+                                    <input id="pink-theme" type="radio" name="theme">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="theme col-6 col-xl-3">
+                            <label for="blue-theme"><img src="assets/img/blue-theme.png" alt="blue theme"></label>
+                            <div class="button--radio" role="radio" aria-checked="false">
+                                <label> Szablon C
+                                    <input id="blue-theme" type="radio" name="theme">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container container-margin-top">
+                    <h2 class="page-title--small" aria-level="1">Obraz tła</h2>
+                    <div class="flex-container background-container">
+                        <button class="button">PRZEGLĄDAJ</button>
+                        <p class="label--small">Możesz dodać własny obraz, wyświetlany w tle serwisu. Zalecany wymiar to co najmniej 1200x1000 px</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="section footer">
+            <div class="container-fluid">
+                <div class="row footer-padding-top">
+                    <div class="col-2 offset-md-2 offset-0">
+                        <p>O nas</p>
+                        <p>Kontakt</p>
+                    </div>
+                    <div class="col-md-2 col-3">
+                        <p>Współpraca</p>
+                        <p>Dla reklamodawców</p>
+                    </div>
+                    <div class="col-md-2 col-3 offset-md-1 offset-0">
+                        <p>Polityka prywatności</p>
+                        <p>Polityka cookies</p>
+                        <p>Regulamin</p>
+                    </div>
+                    <div class="col-md-2 col-3">
+                        <p>Kup premium</p>
+                        <p>Wykorzystaj kod</p>
+                        <p>Podaruj w prezencie</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-2 offset-1 col-3">
+                        <p>&copy;ProgramDiety.pl 2018 Wszelkie prawa zastrzeżone.</p>
+                    </div>
+                    <div class="offset-1 flex-container">
+                        <img src="assets/img/facebook.png" alt="facebook logo">
+                        <img src="assets/img/instagram.png" alt="instagram logo">
+                        <img src="assets/img/youtube.png" alt="youtube logo">
+                        <img src="assets/img/twitter.png" alt="twitter logo">
+                    </div>
+                    <div class="offset-lg-3 offset-xl-3 offset-md-2 offset-1">
+                        <p>realizacja: Ideo</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="node_modules/date-input-polyfill/date-input-polyfill.dist.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
